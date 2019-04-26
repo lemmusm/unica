@@ -1,0 +1,23 @@
+<section class="sub-banner" data-stellar-background-ratio="0.5">
+
+  <div class="overlay">
+    <div class="container">
+      <img class="logo-comodin" src="../../../../assets/img/comodin.png" alt="logo-comodín">
+      <br>
+      <br>
+      <br>
+      <p class="p-text-bold">FARMACOS Y ARTÍCULOS MÉDICOS DE HERIDAS</p>
+    </div>
+  </div>
+</section>
+<section class="gallery-pages">
+  <div class="portfolio-wrapper">
+    <div class="container popup-gallery">
+      <ul class="items gallery-item row masonry">
+        <li class="col-md-6" *ngFor="let img of masonryImages" lazy-load-images>
+          <img class="img-responsive item-masonry" [attr.data-src]="img.url">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
